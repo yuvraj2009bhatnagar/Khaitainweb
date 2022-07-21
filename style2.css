@@ -1,0 +1,283 @@
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	
+}
+
+.banner{
+width: 100%;
+height: 100vh;
+background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(resouces.png);
+
+
+}
+
+
+.navbar{
+  width: 85%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 25px 0px;
+ margin: auto;
+ 
+}
+.logo{
+width: 80px;
+cursor: pointer;
+}
+.navbar .ab li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+
+}
+.navbar .ab li a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+text-transform: uppercase;
+}
+.navbar .ab li::after{
+content:'';
+height: 3px;  
+width:0;
+background: #ffffff;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;  
+}
+.navbar .ab li:hover::after{
+width: 100%;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+.glow1 {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: lowercase;
+}
+
+@keyframes glow {
+from{
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px #ebff13, 0 0 30px #ebff13, 0 0 40px #ebff13, 0 0 50px #ebff13, 0 0 60px #ebff13, 0 0 70px #ebff13;
+  }
+  
+to{
+text-shadow: 0 0 20px #ebff13, 0 0 30px #ebff13, 0 0 40px #ebff13, 0 0 50px #ebff13, 0 0 60px #ebff13, 0 0 70px #ebff13, 0 0 80px #ebff13;
+  }
+}
+
+.newsletter_title {
+  font-family: "Noto Serif Display", serif;
+  font-size: xx-large;
+  font-weight: 250;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+}
+.c-link:hover {
+  cursor: pointer;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+.footer_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border: none;
+}
+.footer_inner {
+  background: var(--light);
+  backdrop-filter: blur(100px);
+  border: 0.1px solid rgba(255, 255, 255, 0.571);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+
+input {
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  font-weight: 500;
+  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 0;
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: bolder;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: white;
+}
+@media (min-width: 675px) {
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+}
+form {
+  position: relative;
+}
+svg {
+  margin: 0.5rem;
+}
+.c-2 {
+  margin-top: 3.5rem;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: rgb(66, 153, 44);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #ff1900ce;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none; 
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: xx-large;
+}
+
+.registerbtn:hover {
+  background-color: rgb(164, 0, 0);
+  
+}
+.veed{
+width: 750px;
+height:500px;
+margin-left: 300px;
+}
+
+.ol1{
+  margin-left: 100px;
+  font-size: large;
+  font-family: Verdana, Tahoma, sans-serif;
+  
+}
+.i1{
+  margin-left: 300px;
+  width: 750px;
+  height:500px;
+
+}
+.i2{
+  margin-left: 300px;
+  width: 750px;
+  height:500px;
+
+}
+.i3{
+  margin-left: 300px;
+  width: 750px;
+  height:500px;
+
+}
+.i4{
+  margin-left: 300px;
+  width: 750px;
+  height:500px;
+
+}
+.content53{
+font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.cr7{
+ margin-left: 100px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(255, 0, 0, 0); /* Set a background color */
+  color: rgba(28, 175, 163, 0.726); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#myBtn img{
+  width: 40px;
+}
+
